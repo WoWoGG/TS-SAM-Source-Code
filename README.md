@@ -1,7 +1,6 @@
 # TS-SAM-Source-Code
 TS-SAM: Fine-Tuning Segment-Anything Model for Downstream Tasks
 
-以下是基于您提供的内容编写的 README 文件模板：
 
 ---
 
@@ -18,7 +17,7 @@ In `TS-SAM.py`, the VOC2012 segmentation dataset is used, and all images are res
 ### Repository Contents
 
 - **TS-SAM.py**: Python script implementing the TS-SAM model with hypothesized parameters.
-- **segment-anything-main/**: Directory containing the necessary code to perform segmentation based on the TS-SAM architecture.
+- **segment-anything-main/**: Directory containing the necessary code to perform segmentation based on the TS-SAM architecture. **Ensure that this repository is placed inside the `segment-anything-main` folder.**
 - **README.md**: This document.
 - **LICENSE**: License information for the project.
 - **.gitignore**: Git ignore file specifying files and directories to ignore in the repository.
@@ -31,14 +30,14 @@ In `TS-SAM.py`, the VOC2012 segmentation dataset is used, and all images are res
    cd TS-SAM-Source-Code
    ```
 
-2. **Install required packages**:
-   Make sure you have Python installed along with necessary libraries. Install dependencies using:
-   ```bash
-   pip install -r requirements.txt
-   ```
+2. **Place the folder correctly**:
+   Ensure that the cloned `TS-SAM-Source-Code` folder is placed inside the `segment-anything-main` folder. This setup is necessary for the code to run correctly.
 
-3. **Run the model**:
-   The model can be run using the provided script:
+3. **Modify paths and parameters**:
+   You need to modify various paths and parameters in `TS-SAM.py` to match your environment and dataset location. Ensure all paths point correctly to the necessary resources and datasets.
+
+4. **Run the model**:
+   After setting the correct paths and parameters, run the model using the provided script:
    ```bash
    python TS-SAM.py
    ```
@@ -51,6 +50,11 @@ The model is trained using the VOC2012 segmentation dataset. All images are resi
 
 This work is based on the research presented in the paper **TS-SAM: Fine-Tuning Segment-Anything Model for Downstream Tasks**. We have made reasonable assumptions for the parameters used in our code due to the lack of detailed parameter specifications in the paper.
 
+### Notes
+
+- The parameters in `TS-SAM.py` are hypothesized; adjust them based on your specific requirements.
+- Ensure all paths are set correctly in the script to avoid errors during execution.
+
 ---
 
 ## 中文
@@ -62,7 +66,7 @@ This work is based on the research presented in the paper **TS-SAM: Fine-Tuning 
 ### 仓库内容
 
 - **TS-SAM.py**: 实现TS-SAM模型的Python脚本，使用了假设的参数。
-- **segment-anything-main/**: 包含根据TS-SAM架构执行分割所需代码的目录。
+- **segment-anything-main/**: 包含根据TS-SAM架构执行分割所需代码的目录。**请确保将本仓库放置在`segment-anything-main`文件夹下。**
 - **README.md**: 本文档。
 - **LICENSE**: 项目的许可证信息。
 - **.gitignore**: 指定要在仓库中忽略的文件和目录的Git忽略文件。
@@ -75,14 +79,14 @@ This work is based on the research presented in the paper **TS-SAM: Fine-Tuning 
    cd TS-SAM-Source-Code
    ```
 
-2. **安装所需的包**：
-   确保安装了Python及必要的库。使用以下命令安装依赖项：
-   ```bash
-   pip install -r requirements.txt
-   ```
+2. **正确放置文件夹**：
+   确保克隆的 `TS-SAM-Source-Code` 文件夹放置在 `segment-anything-main` 文件夹中。这样设置是为了确保代码能够正确运行。
 
-3. **运行模型**：
-   可以使用提供的脚本运行模型：
+3. **修改路径和参数**：
+   您需要修改 `TS-SAM.py` 中的各种路径和参数，以匹配您的环境和数据集位置。确保所有路径正确指向必要的资源和数据集。
+
+4. **运行模型**：
+   在设置好正确的路径和参数后，使用提供的脚本运行模型：
    ```bash
    python TS-SAM.py
    ```
@@ -95,6 +99,10 @@ This work is based on the research presented in the paper **TS-SAM: Fine-Tuning 
 
 此工作基于论文**TS-SAM: Fine-Tuning Segment-Anything Model for Downstream Tasks**中的研究。由于论文中缺乏详细的参数说明，我们在代码中对所用参数进行了合理假设。
 
----
+### 注意
 
-将以上内容复制到您的 `README.md` 文件中，保存并提交到您的 GitHub 仓库即可。
+- `TS-SAM.py`中的参数是假设的；请根据您的具体需求进行调整。
+- 请确保脚本中的所有路径都设置正确，以避免执行过程中出现错误。
+
+
+
